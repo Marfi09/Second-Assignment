@@ -1,3 +1,4 @@
+/* common styles */
 body{
     font-family: 'Bebas Neue', cursive;
 font-family: 'Manrope', sans-serif;
@@ -8,4 +9,151 @@ font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 margin: 0;
+background-color: rgba(32, 27, 27, 0.288);
+}
+
+/* header style */
+header{
+    width: 100%;
+    height: 100px;
+    background: rgb(14, 13, 13);
+    display: flex;
+    justify-content: center;
+
+}
+
+nav{
+    width: 1500px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+.left-heading{
+    display: flex;
+}
+.left-heading h1{
+    color: white;
+    font-size: 2em;
+}
+.right-heading{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+}
+.right-heading a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* section-one */
+.one{
+display: flex;
+align-items: center;
+margin-top: 40px;
+}
+.one-left{
+width: 50%;
+margin-right: 100px;
+padding: 20px;
+}
+.one-left p{
+    width: 80%;
+    
+}
+.one-left h1{
+
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.one-right{
+
+    background-image: url(images/Circle\ design.svg);
+
+}
+button{
+    background-color: purple;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+}
+/* section-two */
+.two{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 60px;
+}
+
+/* section-three */
+
+.three{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.three h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.item{
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.178);
+    background-color: white;
+
+}
+.detail{
+    text-align: center;
+}
+.full{
+    color: orange;
+}
+
+.three h3{
+    text-align: right;
+    
+}
+.three h3>a{
+    text-decoration: none;   
+}
+
+
+
+
+/* footer */
+footer {
+   text-align: center; 
+   background-color: black;
+   color: white;
+   padding: 20px;
+}
+
+
+.social{
+    display: grid;
+    grid-template-columns: repeat(4, 20px);
+    column-gap: 35px;
+    justify-content: center;
+    
+}
+.social a{
+    font-size: 25px;
+    
 }
